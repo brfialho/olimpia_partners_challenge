@@ -20,7 +20,7 @@ Cada etapa é independente com tratamento de erro isolado. Falhas parciais não 
 - Função: `buscar_noticias()`
 - Requisição HTTP para Google News RSS (pt-BR)
 - Parse XML com ElementTree
-- Extrai 5 itens: título, link, data
+- Extrai 3 itens: título, link, data
 - Output: Array de dicionários
 
 ### 3. Identificação do Ticker
@@ -70,16 +70,6 @@ chain.invoke({"empresa": nome})
 **Google News RSS**: Notícias públicas sem autenticação. XML padrão.
 
 **Yahoo Finance**: Cotações via API pública não oficial. Sem autenticação.
-
----
-
-## Performance
-
-Tempo médio: **6-8 segundos**
-- Resumo: 2-3s
-- Notícias: 1s
-- Ticker: 2-3s
-- Cotação: <1s
 
 ---
 

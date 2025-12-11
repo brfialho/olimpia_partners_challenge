@@ -146,7 +146,7 @@ def buscar_noticias(empresa: str) -> list:
         root = ET.fromstring(response.content)
         noticias = []
         
-        for item in root.findall(".//item")[:5]:
+        for item in root.findall(".//item")[:3]:
             titulo = item.find("title")
             link = item.find("link")
             pub_date = item.find("pubDate")
